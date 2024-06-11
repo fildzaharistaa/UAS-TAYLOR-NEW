@@ -1,0 +1,65 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jul 8, 2023, 11:55:06 PM
+    Author     : laiqa
+*/
+
+
+/* Kontainer Beranda */
+.beranda {
+    padding: 20px;
+}
+
+/* Menu */
+.menux {
+    display: inline-block;
+    font-size: 24px;
+    color: #000;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+/* Kotak Kartu */
+.container3 {
+    background-color: #ffccff;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.kotak-kartu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 1.5%;
+    box-sizing: border-box;
+    gap: 20px;
+}
+
+.info-box {
+    border: 2px solid #ccc;
+    background-color: #ccccff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.info-box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    margin-bottom: 10px;
+}
+
+.info-box a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.info-box a:hover {
+    text-decoration: underline;
+}

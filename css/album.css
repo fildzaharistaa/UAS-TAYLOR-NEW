@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+/* pengaturan si kontainer nya si bungkus buat si kartu XD */
+.container3 {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* background-color: tomato; */
+}
+
+/* pengaturan si bungkus nya kartu */
+.kotak-kartu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 15px;
+    padding: 1.5%;
+    box-sizing: border-box;
+    gap: 1rem;
+    flex: 1 1;
+    margin-bottom: 10px;
+}
+
+/* pengaturan si tiap2 kartu */
+.linkalbum {
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 1rem;
+    background: #9999ff;
+    color: #363636;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.233) 0 0 8px 0;
+    border-radius: 10px;
+    transition: all ease 200ms;
+    overflow: hidden;
+    max-width: 20rem;
+}
+
+/* pengaturan si teks yang banyak */
+.deskripsialbum {
+    position: relative;
+    padding: 10px 10px;
+    font-size: 12px;
+}
+
+.deskripsialbum p {
+    line-height: 20px;
+    text-align: justify;
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* pengaturan deskripsi yang dibawah */
+.bungkus-deskripsi {
+    position: relative;
+    display: flex;
+    padding: 10px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
+    gap: 10px;
+    color: hsla(0, 0%, 21%, 0.7);
+}
+
+/* pengaturan si bungkus nya gambar */
+.bungkusgambar {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+}
+
+/* ini tampilan si img (si gambar) */
+.gambaralbum {
+    /* background-size: tomato; */
+    overflow: hidden;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    background-blend-mode: overlay;
+    filter: brightness(90%);
+    background-size: cover;
+}
+
+/* ini pengaturan css buat si judul */
+.linkalbum .judulalbum {
+    position: absolute;
+    width: 100%;
+    padding: 10px 10px;
+    background: #FDE6EF;
+    background: linear-gradient(90deg, #53537d 0%, #bf65ff00 100%);
+    color: rgb(40, 28, 40);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    bottom: 0%;
+    font-size: 12px;
+    line-height: 2;
+}
+
+/* efek buat dilewatin mouse */
+.linkalbum:hover,
+.linkalbum:focus {
+    filter: brightness(110%);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
+}
+
+/* pengaturan gambar global (gak wajib sepertinya) */
+img {
+    width: 100%;
+}
+
+
+
+/* RESPONSIVE CSS */
+
+@media (max-width: 1200px) {
+    .linkalbum {
+        width: 100%;
+        max-width: 20rem;
+    }
+}
+
+.menux {
+    display: none;
+}
+
+@media (max-width:768px) {
+    .beranda {
+        width: 100%;
+        float: none;
+    }
+
+    ::-webkit-scrollbar {
+        display: block;
+        width: 0;
+        background-color: #f9dff2;
+    }
+
+    .sidebar {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 100%;
+        transform: translateX(-500px);
+        transition: transform 0.8s ease-in-out;
+        line-height: 3;
+        z-index: 9999;
+        overflow-y: scroll;
+        padding-left: 1rem;
+    }
+
+    .sidebar.show {
+        transform: translateX(-20px);
+    }
+
+    .logofr .logo {
+        width: 140px;
+        margin-top: 150px;
+    }
+
+    .menux {
+        display: block;
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        padding: 5px 8px;
+        border-radius: 5px;
+        color: #333333;
+        background-color: #9999ff;
+        font-size: 1rem;
+        box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.35);
+        z-index: 9999;
+    }
+
+    .kepala_judul {
+        z-index: 10;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        width: 90%;
+        transform: translateX(-50%);
+        /* background-color: tomato; */
+        margin-bottom: 1rem;
+      }
+    
+      .kepala_judul .subtitle {
+        color: white;
+        text-align: center;
+        line-height: 24px;
+        text-shadow: 5px 1px 10px black;
+        font-size: 22px;
+        font-weight: 900;
+      }
+    
+      .kontentk .illus {
+        width: 400px;
+      }
+
+    .linkalbum {
+        width: 100%;
+        max-width: 20rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .linkalbum {
+        margin: auto;
+        width: auto;
+        max-width: 90%;
+    }
+}
+
+@media (max-width:425px) {
+
+    .kepala_judul {
+        z-index: 10;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        width: 90%;
+        transform: translateX(-50%);
+        /* background-color: tomato; */
+        margin-bottom: 1rem;
+    }
+
+    .kepala_judul .subtitle {
+        color: white;
+        text-align: center;
+        line-height: 2rem;
+        text-shadow: 5px 1px 10px black;
+        font-size: 22px;
+        font-weight: 900;
+    }
+
+    .linkbp .judul {
+        color: black;
+        text-align: center;
+        line-height: 24px;
+        font-size: 20px;
+        font-weight: 800;
+        font-family: Arial;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        margin-top: 24px;
+    }
+
+    .linkfans .judul {
+        color: black;
+        text-align: center;
+        line-height: 24px;
+        font-size: 20px;
+        font-weight: 800;
+        font-family: Arial;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        margin-top: 3rem;
+    }
+
+    .kontentk .illus {
+        width: 300px;
+    }
+
+}

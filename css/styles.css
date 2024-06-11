@@ -1,0 +1,371 @@
+/* 
+    Created on : Jul 4, 2023, 2:16:12 PM
+    Author     : laiqa
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+::-webkit-scrollbar {
+  display: block;
+  width: 10px;
+  background-color: #ccccff;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #9999ff;
+}
+
+html {
+    background: #ccccff;
+}
+
+/* Ini reset CSS (pake tanda * itu artinya semua class,id,tag dipilih) */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* bagian sidebar luar */
+.sidebar {
+  font-family: Arial;
+  font-size: 16px;
+  position: fixed;
+  width: 16%;
+  height: 100vh;
+  background: #5c4e75;
+  font-size: 0.65em;
+}
+
+/* bagian navigasi */
+.nav {
+  position: relative;
+  margin: 0 15%;
+  text-align: right;
+  top: 40%;
+  transform: translateY(-50%);
+  font-weight: bold;
+  padding-top: 80px;
+}
+
+/* ini bagian link (Luar) */
+.nav ul {
+  list-style: none;
+}
+
+/* ini bagian link buat ngatur jarak antar link */
+.nav ul li {
+  position: relative;
+  margin: 3.2em 0;
+}
+
+/* ini bagian link nya */
+.nav ul li a {
+  line-height: 5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.4em;
+  color: rgba(255, 255, 255, 0.35);
+  display: block;
+  transition: all ease-out 300ms;
+}
+
+/* ini bagian link ketika di kasih class active */
+.nav ul li.active a {
+  color: white;
+}
+
+/* ini efek buat garis di bawah link biar sedikit transparan kalau tidak ada kelas active di <li> nya */
+.nav ul li:not(.active)::after {
+  opacity: 0.2;
+}
+
+/* ini ngasih efek berubah warna teks, pas lagi di hover/di deketin */
+.nav ul li:not(.active):hover a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* ini garis yang ada di bawah link */
+.nav ul li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.2em;
+  background: #9999ff;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(to right, #525252, #ffa6fc);
+}
+
+/* ini bagian yang kanan,
+  Kelas Twitter bisa di ganti pake kata apa aja, semisalkan gak mau pake kata "twitter"
+  !Ini buat ngatur bagian kanan
+*/
+.beranda {
+  position: relative;
+  width: 83%;
+  float: right;
+  min-height: 100vh;
+  padding-block: 10px;
+}
+
+/* ini kontainer nya si twitter */
+.beranda .container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: 100%;
+  width: 90%;
+  font-family: 'Josefin Sans', sans-serif;
+  /* background-color: tomato; nyalain kalo mau liat */
+}
+
+/* ini buat ngatur teks (tag <p>) yang ada di dalem twitter kontainer nya */
+.beranda p {
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  color: #222;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* ini buat ngatur bungkus nya logo */
+.logofr {
+  display: flex;
+  justify-content: center;
+}
+
+/* ini buat ngatur gambar logo nya */
+.logofr .logo {
+  width: 140px;
+}
+
+.kepala {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+  /* background-color: tomato; */
+}
+
+/* INI Buat ngatur kontainer slider nya */
+.slider {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  /* background-color: purple; nyalain kalo mau liat */
+  margin-top: 4rem;
+  display: flex;
+  z-index: 1;
+}
+
+.slider_konten img {
+  width: 100%;
+  object-fit: cover;
+  height: 25rem;
+  filter: brightness(45%);
+  z-index: 2;
+  border-radius: 20px;
+}
+
+.kepala_judul {
+  z-index: 10;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  /* background-color: tomato; */
+}
+
+.kepala_judul .title {
+  color: white;
+  text-align: center;
+  line-height: 6px;
+  text-shadow: 5px 1px 10px black;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.kepala_judul .subtitle {
+  color: white;
+  text-align: center;
+  line-height: 6px;
+  text-shadow: 5px 1px 10px black;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.container .judul {
+  color: black;
+  text-align: left;
+  line-height: 10px;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: Arial;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-top: 24px;
+}
+
+.container .deskripsi1 {
+  color: black;
+  text-align: justify;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-bottom: 24px;
+}
+
+.container .deskripsi2 {
+  color: black;
+  text-align: justify;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-bottom: 70px;
+}
+
+
+/* RESPONSIVE CSS */
+
+.menux {
+  display: none;
+}
+
+@media (max-width:1024px) {
+.kepala_judul {
+  z-index: 10;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  width: 90%;
+  transform: translateX(-50%);
+  }
+}
+
+@media (max-width:768px) {
+  .beranda {
+    width: 100%;
+    float: none;
+  }
+
+  ::-webkit-scrollbar {
+    display: block;
+    width: 0;
+    background-color: #BF00FF;
+  }
+
+  .sidebar {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    transform: translateX(-500px);
+    transition: transform 0.8s ease-in-out;
+    line-height: 3;
+    z-index: 9999;
+    overflow-y: scroll;
+    padding-left: 1rem;
+  }
+
+  .sidebar.show {
+    transform: translateX(-20px);
+  }
+
+  .logofr .logo {
+    width: 140px;
+    margin-top: 150px;
+  }
+
+  .menux {
+    display: block;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    color: #333333;
+    background-color: #9999ff;
+    font-size: 1rem;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.35);
+    z-index: 9999;
+  }
+
+  .kepala_judul {
+    z-index: 10;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 90%;
+    transform: translateX(-50%);
+    margin-bottom: 1rem;
+  }
+
+  .kepala_judul .subtitle {
+    color: white;
+    text-align: center;
+    line-height: 24px;
+    text-shadow: 5px 1px 10px black;
+    font-size: 22px;
+    font-weight: 900;
+  }
+
+  .kontentk .illus {
+    width: 400px;
+  }
+}
+
+@media (max-width:425px) {
+
+  .kepala_judul {
+    z-index: 10;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 90%;
+    transform: translateX(-50%);
+    margin-bottom: 1rem;
+  }
+
+  .kepala_judul .subtitle {
+    color: white;
+    text-align: center;
+    line-height: 2rem;
+    text-shadow: 5px 1px 10px black;
+    font-size: 22px;
+    font-weight: 900;
+  }
+
+  .linkbp .judul {
+    color: black;
+    text-align: center;
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: Arial;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-top: 24px;
+  }
+
+  .linkfans .judul {
+    color: black;
+    text-align: center;
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: Arial;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-top: 3rem;
+  }
+
+.kontentk .illus {
+    width:300px;
+}
+}

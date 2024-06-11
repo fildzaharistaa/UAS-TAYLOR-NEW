@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+/* 
+    Created on : Jul 8, 2023, 11:55:06 PM
+    Author     : laiqa
+*/
+
+/* pengaturan si kontainer nya si bungkus buat si kartu XD */
+.container3 {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* pengaturan si bungkus nya kartu */
+.info-box {
+  border: 2px solid #ccc;
+  background-color: #ffccff;
+  padding: 10px;
+  margin-bottom: 10px; /* Mengubah nilai margin-bottom menjadi lebih kecil */
+  border-radius: 5px;
+  margin-left: 300px; /* tambahkan ini untuk memberikan ruang pada sisi kiri */
+  margin-right: 20px;
+}
+
+.kotak-kartu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px; /* Mengubah nilai margin-top menjadi lebih kecil */
+  padding: 1.5%;
+  box-sizing: border-box;
+  gap: 1px;
+  flex: 1 1;
+  margin-bottom: 10px; /* Mengubah nilai margin-bottom menjadi lebih kecil */
+}
+
+
+.inner {
+  padding: 20px;
+  background-color: #ffccff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-left: 300px; /* Mengubah properti margin-left menjadi auto */
+  margin-right: auto; /* Menambahkan properti margin-right menjadi auto */
+  max-width: 1150px; /* Menambahkan max-width agar form tidak terlalu lebar */
+}
+
+.row {
+  display: flex;
+  justify-content: center; /* Mengubah nilai properti justify-content menjadi center */
+}
+
+.col-md-3 {
+  flex-basis: 100%; /* Mengubah nilai flex-basis menjadi 100% agar form terletak di tengah */
+  max-width: 100%; /* Menambahkan max-width agar form tidak terlalu lebar */
+}
+
+
+label {
+font-weight: bold;
+}
+
+input.form-control {
+width: 100%;
+padding: 10px;
+border-radius: 5px;
+border: 1px solid #ccc;
+}
+
+.btn-primary {
+display: inline-block;
+padding: 8px 12px;
+margin-top: 10px;
+font-size: 14px;
+font-weight: bold;
+color: #fff;
+background-color: #660066;
+border: 1px solid #007bff;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #660066;
+border-color: #0056b3;
+}
+
+.delete-button {
+    background-color: #660066;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}

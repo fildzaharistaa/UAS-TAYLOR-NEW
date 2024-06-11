@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.kotak-kartu {
+    position: relative;
+    margin-top: 50px;
+    padding-block: 10px; 
+}
+
+.container2 {
+    position: relative;
+    margin-top: 200rem;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: 100%;
+    width: 60%;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #9999ff;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+}
+
+.nama p{
+    color: black;
+    text-align: center;
+    line-height: 10px;
+    font-size: 24px;
+    font-weight: 800;
+    font-family: Arial;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-top: 24px;
+}
+
+
+.foto img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: left top;
+}
+
+.biodata p {
+  color: black;
+  text-align: justify;
+  /* Remove line-height property */
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-bottom: 16px;
+}
+
+.biodata a {
+  color: black;
+  text-align: justify;
+  /* Remove line-height property */
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Josefin Sans', sans-serif;
+  margin-bottom: 16px;
+  text-decoration: none;
+}
+
+
+
+.grayosh{
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    position: relative;
+    overflow: hidden;
+    transition: ease-out 300ms;
+    margin-bottom: 5rem;
+}
+
+
+.grayosh:before {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    opacity: 0;
+    background: white;
+    box-shadow: 0 0 20px 3px white;
+    -webkit-transform: skewX(-30deg);
+    -moz-transform: skewX(-30deg);
+    -ms-transform: skewX(-30deg);
+    -o-transform: skewX(-30deg);
+    transform: skewX(-30deg);
+    -webkit-animation: shinyy 4s ease 0s infinite;
+    -moz-animation: shinyy 4s ease 0s infinite;
+    animation: shinyy 4s ease 0s infinite;
+}
+
+@-webkit-keyframes shinyy {
+    from {
+    opacity: 0;
+    left: -250%;
+    }
+    50% {
+    opacity: 0.3;
+    }
+    to {
+    opacity: 0;
+    left: 550%;
+    }
+}
+@-moz-keyframes shinyy {
+    from {
+    opacity: 0;
+    left: -250%;
+    }
+    50% {
+    opacity: 0.3;
+    }
+    to {
+    opacity: 0;
+    left: 550%;
+    }
+}
+@keyframes shinyy {
+    from {
+    opacity: 0;
+    left: -250%;
+    }
+    50% {
+    opacity: 0.3;
+    }
+    to {
+    opacity: 0;
+    left: 550%;
+    }
+}
+
+/* RESPONSIVE CSS */
+
+.menux {
+    display: none;
+  }
+  
+  @media (max-width:768px) {
+    .beranda {
+      width: 100%;
+      float: none;
+    }
+  
+    ::-webkit-scrollbar {
+      display: block;
+      width: 0;
+      background-color: #f9dff2;
+    }
+  
+    .sidebar {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100%;
+      transform: translateX(-500px);
+      transition: transform 0.8s ease-in-out;
+      line-height: 3;
+      z-index: 9999;
+      overflow-y: scroll;
+      padding-left: 1rem;
+    }
+  
+    .sidebar.show {
+      transform: translateX(-20px);
+    }
+  
+    .logofr .logo {
+      width: 140px;
+      margin-top: 150px;
+    }
+  
+    .menux {
+      display: block;
+      position: fixed;
+      right: 20px;
+      top: 20px;
+      padding: 5px 8px;
+      border-radius: 5px;
+      color: #333333;
+      background-color: #9999ff;
+      font-size: 1rem;
+      box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.35);
+      z-index: 9999;
+    }
+  
+    .kepala_judul {
+      z-index: 10;
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      width: 90%;
+      transform: translateX(-50%);
+      /* background-color: tomato; */
+      margin-bottom: 1rem;
+    }
+  
+    .kepala_judul .subtitle {
+      color: white;
+      text-align: center;
+      line-height: 24px;
+      text-shadow: 5px 1px 10px black;
+      font-size: 22px;
+      font-weight: 900;
+    }
+  
+    .kontentk .illus {
+      width: 400px;
+    }
+
+    
+  }
+  
+  @media (max-width:425px) {
+    
+    .kepala_judul {
+      z-index: 10;
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      width: 90%;
+      transform: translateX(-50%);
+      /* background-color: tomato; */
+      margin-bottom: 1rem;
+    }
+  
+    .kepala_judul .subtitle {
+      color: white;
+      text-align: center;
+      line-height: 2rem;
+      text-shadow: 5px 1px 10px black;
+      font-size: 22px;
+      font-weight: 900;
+    }
+  
+    .linkbp .judul {
+      color: black;
+      text-align: center;
+      line-height: 24px;
+      font-size: 20px;
+      font-weight: 800;
+      font-family: Arial;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      margin-top: 24px;
+    }
+  
+    .linkfans .judul {
+      color: black;
+      text-align: center;
+      line-height: 24px;
+      font-size: 20px;
+      font-weight: 800;
+      font-family: Arial;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      margin-top: 3rem;
+    }
+
+    .kontentk .illus {
+        width: 300px;
+    }
+  
+    .biodata{
+      display: none;
+    }
+  }
