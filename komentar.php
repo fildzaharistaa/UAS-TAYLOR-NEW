@@ -51,7 +51,6 @@
             echo "<p class='error-message'>Error: " . $sql . "<br>" . $conn->error . "</p>";
         }
     }
-
     $comments = [];
     $sql = "SELECT * FROM komentar";
     $result = $conn->query($sql);
@@ -64,6 +63,7 @@
 
     $conn->close();
     ?>
+
 
 
     <section class="beranda">
