@@ -8,7 +8,6 @@
     padding-bottom: 8px;
     max-width: 1200px;
     margin: 0 auto;
-    /* background-color: tomato; */
 }
 
 .kontentk {
@@ -50,14 +49,13 @@
 
 .kartukontak {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 1rem;
     width: 100%;
     margin-inline: auto;
     margin-top: 1rem;
     font-family: 'Josefin Sans', sans-serif;
-    /* background-color: tomato; */
 }
 
 .kartu {
@@ -66,13 +64,14 @@
     padding: 1rem 1rem;
     margin-block: 15px;
     background-color: #FFABD4;
+    flex: 1 1 30%; /* Default 3 per row */
+    max-width: 350px; /* Membatasi ukuran maksimum kartu */
 }
 
 .kartunama {
     min-width: 15rem;
     min-height: 11rem;
     max-width: 35rem;
-    flex: 1 1;
     text-shadow: 2px 1px 10px #0000002a;
     box-shadow: rgba(0, 0, 0, 0.233) 0 0 8px 0;
 }
@@ -104,7 +103,6 @@
     overflow: hidden;
     transition: ease-out 300ms;
 }
-
 
 .grayosh:before {
     content: "";
@@ -167,14 +165,12 @@
     }
 }
 
-
 /* RESPONSIVE CSS */
-
 .menux {
     display: none;
-  }
+}
   
-  @media (max-width:768px) {
+@media (max-width:768px) {
     .beranda {
       width: 100%;
       float: none;
@@ -231,7 +227,6 @@
       left: 50%;
       width: 90%;
       transform: translateX(-50%);
-      /* background-color: tomato; */
       margin-bottom: 1rem;
     }
   
@@ -247,9 +242,17 @@
     .kontentk .illus {
       width: 400px;
     }
-  }
+
+    .kartukontak {
+        justify-content: center;
+    }
+
+    .kartu {
+        flex: 1 1 45%; /* Two per row on tablets */
+    }
+}
   
-  @media (max-width:425px) {
+@media (max-width:425px) {
   
     .kepala_judul {
       z-index: 10;
@@ -258,7 +261,6 @@
       left: 50%;
       width: 90%;
       transform: translateX(-50%);
-      /* background-color: tomato; */
       margin-bottom: 1rem;
     }
   
@@ -298,5 +300,12 @@
     .kontentk .illus {
         width: 300px;
     }
-  
-  }
+
+    .kartukontak {
+        justify-content: center;
+    }
+
+    .kartu {
+        flex: 1 1 100%; /* One per row on mobile */
+    }
+}
