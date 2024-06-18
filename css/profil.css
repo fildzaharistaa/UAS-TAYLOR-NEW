@@ -1,6 +1,23 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
+button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+  background-color: #5c4e75;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  align-content: center;
+  margin-left: 330px;
+}
+button:hover {
+  background-color: #d589f5; 
+}
 .kotak-kartu {
     position: relative;
     margin-top: 50px;
@@ -300,18 +317,4 @@
     background-color: #0056b3; /* ubah warna latar belakang saat di hover */
   }
 
-  }
-  .edit-btn{
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    font-size: 16px;
-    font-family: 'Arial', sans-serif;
-    color: #ffffff;
-    background-color: #5c4e75;
-    border: none;
-    border-radius: 0.25rem;
-    cursor: pointer;
-    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    align-content: center;
-    margin-left: 330px;
   }

@@ -1,0 +1,16 @@
+button {
+    display: inline-block;
+    padding: 0.50rem 1rem;
+    font-size: 12px;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    background-color: #5c4e75;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    margin-left: 550px;
+}
+button:hover {
+    background-color: #d589f5; /* Warna latar belakang saat tombol dihover */
+}

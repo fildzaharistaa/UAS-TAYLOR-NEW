@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="https://clipground.com/images/taylor-swift-logo-png-8.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/profil.css">
+    <link rel="stylesheet" href="./css/profiladm.css">
     <title>Profile Taylor Swift</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
@@ -50,9 +51,9 @@
                     </div>
                     <div class="biodata" id="infocontent">
                         
-                        <form action="edit.php" method="post">
-                            <button type="submit" class="edit-btn">Edit</button>
-                        </form>
+                    <form action="edit.php" method="post">
+                        <button type="submit">Edit</button>
+                    </form>
                         <?php
                             while($row = mysqli_fetch_array($sql)){
                         ?>
