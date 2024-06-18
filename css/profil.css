@@ -276,4 +276,42 @@
     .biodata{
       display: none;
     }
+    /* Untuk menempatkan tombol edit di kanan atas dari kotak "Taylor Swift's Biography" */
+  .nama {
+    position: relative; /* pastikan .nama memiliki position: relative untuk referensi posisi absolut */
+  }
+
+  .nama {
+    position: absolute; /* posisikan tombol secara absolut relatif terhadap .nama */
+    top: 10px; /* atur jarak dari atas */
+    right: 10px; /* atur jarak dari kanan */
+    background-color: #007bff; /* warna latar belakang tombol */
+    color: white; /* warna teks tombol */
+    border: none; /* hapus border tombol */
+    padding: 10px 20px; /* jarak dalam tombol */
+    border-radius: 5px; /* sudut melengkung tombol */
+    cursor: pointer; /* ubah cursor saat di hover */
+    font-size: 16px; /* ukuran font tombol */
+    font-family: 'Josefin Sans', sans-serif; /* font keluarga tombol */
+  }
+
+  /* Tambahkan efek hover untuk tombol edit */
+  .nama {
+    background-color: #0056b3; /* ubah warna latar belakang saat di hover */
+  }
+
+  }
+  .edit-btn{
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    background-color: #5c4e75;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    align-content: center;
+    margin-left: 330px;
   }

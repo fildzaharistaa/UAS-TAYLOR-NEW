@@ -1,0 +1,70 @@
+body, html {
+    margin: 0;
+    font-size: 16px; 
+    font-family: 'Arial', sans-serif; 
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #ccccff; /* Ubah warna background sesuai kebutuhan */
+}
+h2{
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto; 
+    padding: 20px;
+    background-color: #fff; 
+    border-radius: 8px; /* Memberi radius sudut */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk efek 3D */
+    text-align: left;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Memberi jarak antar elemen dalam satu baris */
+}
+
+.col {
+    flex: 1; /* Menggunakan flex untuk meratakan kolom */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 80%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccccff;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    margin-left: 25px;
+}
+
+button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    background-color: #5c4e75;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    align-content: center;
+    margin-left: 330px;
+}
+
+button:hover {
+    background-color: #d589f5; /* Warna latar belakang saat tombol dihover */
+}
+
+label{
+    margin-left: 25px;
+    color: #212529;
+}

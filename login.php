@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
     <div class="container">
         <div class="login">
-            <form action="login.php" method="post">
+            <form action="index.html" method="post">
                 <h1>LOGIN</h1>
                 <hr>
                 <p>Taylor Swift Admin</p>
